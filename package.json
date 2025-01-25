@@ -17,11 +17,16 @@
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^6.3.1",
-    "@mui/material": "^6.3.1",
+    "@mui/icons-material": "^6.4.1",
+    "@mui/material": "^6.4.1",
     "@mui/material-nextjs": "^6.3.1",
-    "jotai": "^2.11.0",
+    "immer": "^10.1.1",
+    "jotai": "^2.11.1",
+    "jotai-immer": "^0.4.1",
+    "jotai-optics": "^0.4.0",
+    "nanoid": "^5.0.9",
     "next": "^15.1.4",
+    "optics-ts": "^2.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -30,7 +35,7 @@
     "@cloudflare/workers-types": "^4.20241230.0",
     "@eslint/eslintrc": "^3",
     "@testing-library/dom": "^10.4.0",
-    "@testing-library/react": "^16.1.0",
+    "@testing-library/react": "^16.2.0",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -39,9 +44,9 @@
     "eslint-config-next": "15.1.0",
     "jsdom": "^26.0.0",
     "typescript": "^5",
-    "vercel": "^39.2.6",
+    "vercel": "^39.3.0",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^2.1.8",
-    "wrangler": "^3.99.0"
+    "vitest": "^3.0.3",
+    "wrangler": "^3.103.2"
   }
 }

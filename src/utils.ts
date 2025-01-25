@@ -27,3 +27,12 @@ export function uniqBy<T>(array: T[], iteratee: (value: T) => unknown): T[] {
 export function round(value: number, precision: number): number {
   return Number(value.toFixed(precision));
 }
+
+export function frameCountToTime(limit: number, count: number): string {
+  const remainingCount = limit - count;
+  const sec = remainingCount / 30;
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+
+  return `${m.toString().padStart(2, "0")}:${s.toFixed(3)}`;
+}
