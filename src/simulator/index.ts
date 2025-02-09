@@ -30,6 +30,10 @@ export class Comp {
       }
     });
   }
+
+  names(): string[] {
+    return COMP_KEYS.map((key) => this[key]?.raw.Name ?? "").filter(Boolean);
+  }
 }
 
 export class Student {

@@ -4,9 +4,9 @@ import Paper from "@mui/material/Paper";
 
 import { COMP_KEYS } from "@/utils";
 import { compStateAtom } from "@/store";
+import { Comp } from "@/simulator";
 
 import StudentArea from "./StudentArea";
-import { Comp } from "@/simulator";
 
 export default function CompEditor() {
   const [compState, _setCompState] = useAtom(compStateAtom);
