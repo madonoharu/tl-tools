@@ -1,24 +1,22 @@
 "use client";
+import { useState } from "react";
 import { useAtom, PrimitiveAtom } from "jotai";
 import { focusAtom } from "jotai-optics";
 import { splitAtom } from "jotai/utils";
 import { nanoid } from "nanoid";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import Stack from "@mui/material/Stack";
 
 import { TimelineItem, timelineStateAtom, compStateAtom } from "@/store";
-import { COMP_KEYS, CompKey, frameCountToTime } from "@/utils";
+import { CompKey } from "@/utils";
 import { Comp } from "@/simulator";
 
 import Select from "./Select";
-import { useState } from "react";
+import TimeInput from "./TimeInput";
 
 const itemsAtom = focusAtom(timelineStateAtom, (optic) => optic.prop("items"));
 const itemAtomsAtom = splitAtom(itemsAtom, (state) => state.id);
-
-const LIMIT = 30 * 60 * 4;
 
 const SKILL_KEYS = [
   "Normal",
@@ -33,55 +31,45 @@ interface TimelineEditorItemProps {
   itemAtom: PrimitiveAtom<TimelineItem>;
 }
 
+type TimelineMode = undefined | CompKey;
+
+const LIMIT = 30 * 60 * 4;
+
 function TimelineEditorItem({ itemAtom }: TimelineEditorItemProps) {
   const [state, setState] = useAtom(itemAtom);
   const [compState, _setCompState] = useAtom(compStateAtom);
 
-  const [compKey, setCompKey] = useState<CompKey>("st1");
+  const [mode, setMode] = useState<TimelineMode>();
   const [skillKey, setSkillKey] = useState("Ex");
 
   const comp = new Comp(compState);
-
-  const effects = comp[compKey]?.raw.Skills[skillKey as "Normal"];
-
-  const handleIncr = () => {
-    setState({
-      ...state,
-      frameCount: state.frameCount + 1,
-    });
-  };
-
-  const handleDecr = () => {
-    setState({
-      ...state,
-      frameCount: state.frameCount - 1,
-    });
-  };
+  const options: TimelineMode[] = [undefined, ...comp.keys()];
 
   return (
-    <div>
-      <Box order={state.frameCount} display="flex" alignItems="center">
-        <Button onClick={handleDecr} size="small">
-          <ArrowLeftIcon />
-        </Button>
-        <div>{frameCountToTime(LIMIT, state.frameCount)}</div>
-        <Button onClick={handleIncr} size="small">
-          <ArrowRightIcon />
-        </Button>
-      </Box>
+    <Box display="flex" gap={1}>
+      <TimeInput
+        limit={LIMIT}
+        value={state.frameCount}
+        onChange={(frameCount) =>
+          setState({
+            ...state,
+            frameCount,
+          })
+        }
+      />
 
-      <div>
-        <Select<CompKey>
-          options={COMP_KEYS}
-          value={compKey}
-          onChange={setCompKey}
-          getOptionLabel={(key) => comp[key]?.raw.Name ?? ""}
-        />
+      <Select<TimelineMode>
+        sx={{ minWidth: 160 }}
+        options={options}
+        value={mode}
+        onChange={setMode}
+        getOptionLabel={(mode) => (mode ? comp[mode]?.raw.Name : "-")}
+      />
+
+      {mode && (
         <Select options={SKILL_KEYS} value={skillKey} onChange={setSkillKey} />
-      </div>
-
-      <div>{JSON.stringify(effects)}</div>
-    </div>
+      )}
+    </Box>
   );
 }
 
@@ -97,11 +85,11 @@ export default function TimelineEditor() {
 
   return (
     <div>
-      <Box display="flex" flexDirection="column">
+      <Stack gap={1}>
         {itemAtoms.map((itemAtom) => (
           <TimelineEditorItem key={itemAtom.toString()} itemAtom={itemAtom} />
         ))}
-      </Box>
+      </Stack>
 
       <Button onClick={handleInsert}>TLを追加</Button>
     </div>

@@ -1,3 +1,4 @@
+"use client";
 import CompEditor from "@/components/CompEditor";
 import TimelineEditor from "@/components/TimelineEditor";
 

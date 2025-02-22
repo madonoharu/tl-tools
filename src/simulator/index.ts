@@ -1,5 +1,5 @@
 import studentsJson, { Student as RawStudent } from "@/data/students.json";
-import { COMP_KEYS, range, round } from "@/utils";
+import { COMP_KEYS, CompKey, range, round } from "@/utils";
 
 export interface StudentState {
   id: number;
@@ -33,6 +33,10 @@ export class Comp {
 
   names(): string[] {
     return COMP_KEYS.map((key) => this[key]?.raw.Name ?? "").filter(Boolean);
+  }
+
+  keys(): CompKey[] {
+    return COMP_KEYS.filter((key) => this[key]);
   }
 }
 
