@@ -5,6 +5,10 @@ export function range(n: number): number[] {
   return [...Array(n).keys()];
 }
 
+export function sum(array: number[]): number {
+  return array.reduce((acc, v) => acc + v, 0);
+}
+
 export function uniq<T>(array: T[]): T[] {
   return [...new Set(array)];
 }

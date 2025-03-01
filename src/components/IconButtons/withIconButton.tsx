@@ -1,7 +1,22 @@
+import React from "react";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import Tooltip, { TooltipProps } from "@mui/material/Tooltip";
-import React from "react";
 import { SvgIconProps } from "@mui/material/SvgIcon";
+import { styled } from "@mui/system";
+
+interface StyledIconButtonProps {
+  iconButtonSize?: "tiny" | "small" | "medium";
+}
+
+const StyledIconButton = styled(IconButton, {
+  shouldForwardProp: (prop) => prop !== "iconButtonSize",
+})<StyledIconButtonProps>(
+  ({ iconButtonSize }) =>
+    iconButtonSize === "tiny" && {
+      padding: 3,
+      lineHeight: 0,
+    }
+);
 
 export interface WithIconButtonProps
   extends Omit<IconButtonProps, "size" | "title"> {
@@ -20,21 +35,14 @@ export const withIconButton = (WrappedIcon: React.FC<SvgIconProps>) => {
     ...iconButtonProps
   }) => {
     const WrappedButton = (
-      <IconButton
-        size={size === "tiny" || size === "small" ? "small" : undefined}
-        sx={
-          size === "tiny"
-            ? {
-                padding: "3px",
-                lineHeight: 0,
-              }
-            : null
-        }
+      <StyledIconButton
+        size={size === "tiny" ? "small" : size}
+        iconButtonSize={size}
         {...iconButtonProps}
       >
         <WrappedIcon sx={{ display: "block", fontSize: "inherit" }} />
         {label}
-      </IconButton>
+      </StyledIconButton>
     );
 
     if (title && !iconButtonProps.disabled) {

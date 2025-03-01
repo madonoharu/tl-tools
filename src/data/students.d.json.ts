@@ -252,13 +252,30 @@ export interface Skill {
   Effects: SkillEffect[];
 }
 
+import type { EquipmentCategory } from "./equipment.d.json";
+
 export interface Student {
   Id: number;
   Name: string;
   SquadType: "Main" | "Support";
   School: string;
+  Equipment: [EquipmentCategory, EquipmentCategory, EquipmentCategory];
   AttackPower1: number;
   AttackPower100: number;
+  MaxHP1: number;
+  MaxHP100: number;
+  DefensePower1: number;
+  DefensePower100: number;
+  HealPower1: number;
+  HealPower100: number;
+  DodgePoint: number;
+  AccuracyPoint: number;
+  CriticalPoint: number;
+  CriticalDamageRate: number;
+  AmmoCount: number;
+  AmmoCost: number;
+  Range: number;
+  RegenCost: number;
   Skills: {
     Normal: Skill;
     Ex: Skill;
@@ -268,6 +285,16 @@ export interface Student {
     WeaponPassive?: Skill;
   };
   FavorStatValue: [number, number][];
+  Weapon: {
+    Name: string;
+    AttackPower1: number;
+    AttackPower100: number;
+    MaxHP1: number;
+    MaxHP100: number;
+    HealPower1: number;
+    HealPower100: number;
+    StatLevelUpType: "Standard" | "LateBloom" | "Premature";
+  };
 }
 
 const students: Record<number, Student>;

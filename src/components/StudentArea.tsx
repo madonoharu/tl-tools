@@ -4,14 +4,14 @@ import Image from "next/image";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
-import CloseIcon from "@mui/icons-material/Close";
-import IconButton from "@mui/material/IconButton";
 
 import { CompKey } from "@/utils";
 import { compStateAtom } from "@/store";
 import { useModal } from "@/hooks/useModal";
 
 import StudentList from "./StudentList";
+import StudentEditor from "./StudentEditor";
+import { CloseButton, EditButton } from "./IconButtons";
 
 interface StudentAreaProps {
   compKey: CompKey;
@@ -21,6 +21,7 @@ export default function StudentArea({ compKey }: StudentAreaProps) {
   const [compState, setCompState] = useAtom(compStateAtom);
   const color = compKey.startsWith("st") ? "primary" : "secondary";
   const Modal = useModal();
+  const StudentEditorModal = useModal();
 
   const state = compState[compKey];
 
@@ -53,18 +54,10 @@ export default function StudentArea({ compKey }: StudentAreaProps) {
             alt={`${state.id}`}
             src={`/images/collection/${state.id}.webp`}
           />
-          <IconButton
-            size="small"
-            sx={(theme) => ({
-              position: "absolute",
-              right: -2,
-              top: -2,
-              color: theme.palette.common.white,
-            })}
-            onClick={handleRemove}
-          >
-            <CloseIcon fontSize="inherit" />
-          </IconButton>
+          <Box position="absolute" display="flex" top={-2} right={-2}>
+            <EditButton onClick={StudentEditorModal.show} />
+            <CloseButton onClick={handleRemove} />
+          </Box>
         </Box>
       ) : (
         <Button onClick={Modal.show} sx={{ height: 120 }} fullWidth>
@@ -77,6 +70,9 @@ export default function StudentArea({ compKey }: StudentAreaProps) {
           mode={compKey.slice(0, 2)}
         />
       </Modal>
+      <StudentEditorModal full>
+        <StudentEditor />
+      </StudentEditorModal>
     </Paper>
   );
 }
