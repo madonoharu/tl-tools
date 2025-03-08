@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import Input from "@mui/material/Input";
-import { styled } from "@mui/system";
+import { styled } from "@mui/material/styles";
 
 import NumberInputAdornment from "./NumberInputAdornment";
 

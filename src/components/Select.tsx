@@ -21,12 +21,17 @@ export const getDefaultOptionLabel = (option: unknown): string => {
   return "";
 };
 
+function defaultEqualFn<T>(value: T, option: T): boolean {
+  return value === option;
+}
+
 export type SelectComponentProps<T> = {
   className?: string;
   options: readonly T[];
   value: T;
   onChange?: (option: T) => void;
   getOptionLabel?: (option: T) => React.ReactNode;
+  equalFn?: (value: T, option: T) => boolean;
   itemFilter?: (option: T) => boolean;
 };
 
@@ -45,6 +50,7 @@ const Select: SelectComponent<SelectInputProps> = (props) => {
     value,
     onChange,
     getOptionLabel = getDefaultOptionLabel,
+    equalFn = defaultEqualFn,
     variant,
     itemFilter,
     ...muiProps
@@ -62,7 +68,7 @@ const Select: SelectComponent<SelectInputProps> = (props) => {
     return { display: "none" };
   };
 
-  const index = options.indexOf(value);
+  const index = options.findIndex((option) => equalFn(value, option));
 
   if (index < 0) {
     console.warn(props.label, options, value);

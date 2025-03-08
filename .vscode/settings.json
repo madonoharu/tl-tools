@@ -1,5 +1,8 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "cSpell.words": ["Hyakkiyako", "Regen", "Shanhaijing"]
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "cSpell.words": ["basim", "Hyakkiyako", "Regen", "Shanhaijing"]
 }

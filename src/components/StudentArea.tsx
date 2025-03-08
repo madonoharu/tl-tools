@@ -6,7 +6,7 @@ import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 
 import { CompKey } from "@/utils";
-import { compStateAtom } from "@/store";
+import { compEditorStateAtom } from "@/store";
 import { useModal } from "@/hooks/useModal";
 
 import StudentList from "./StudentList";
@@ -18,20 +18,20 @@ interface StudentAreaProps {
 }
 
 export default function StudentArea({ compKey }: StudentAreaProps) {
-  const [compState, setCompState] = useAtom(compStateAtom);
+  const [compEditorState, setCompEditorState] = useAtom(compEditorStateAtom);
   const color = compKey.startsWith("st") ? "primary" : "secondary";
   const Modal = useModal();
   const StudentEditorModal = useModal();
 
-  const state = compState[compKey];
+  const currentId = compEditorState[compKey];
 
   const handleRemove = () => {
-    setCompState({ ...compState, [compKey]: undefined });
+    setCompEditorState({ ...compEditorState, [compKey]: undefined });
   };
 
-  const handleStudentSelect = (v: number) => {
+  const handleStudentSelect = (id: number) => {
     Modal.hide();
-    setCompState({ ...compState, [compKey]: { id: v } });
+    setCompEditorState({ ...compEditorState, [compKey]: id });
   };
 
   return (
@@ -45,14 +45,14 @@ export default function StudentArea({ compKey }: StudentAreaProps) {
         alignItems: "center",
       })}
     >
-      {state ? (
+      {currentId ? (
         <Box position="relative" height={113}>
           <Image
             priority={true}
             width={100}
             height={113}
-            alt={`${state.id}`}
-            src={`/images/collection/${state.id}.webp`}
+            alt={`${currentId}`}
+            src={`/images/collection/${currentId}.webp`}
           />
           <Box position="absolute" display="flex" top={-2} right={-2}>
             <EditButton onClick={StudentEditorModal.show} />
@@ -71,7 +71,7 @@ export default function StudentArea({ compKey }: StudentAreaProps) {
         />
       </Modal>
       <StudentEditorModal full>
-        <StudentEditor />
+        <StudentEditor id={currentId || 0} />
       </StudentEditorModal>
     </Paper>
   );

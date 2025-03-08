@@ -4,10 +4,10 @@ import { atom, useAtom } from "jotai";
 import Image from "next/image";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
+import { MasterStudent } from "basim";
 
 import SchoolIcon from "@/components/SchoolIcon";
-import studentsJson, { Student } from "@/data/students.json";
-import { Student as S } from "@/simulator";
+import studentsJson from "@/data/students.json";
 
 const MAIN_SCHOOLS = [
   "Abydos",
@@ -38,20 +38,20 @@ export default function StudentList({ mode, onSelect }: StudentListProps) {
 
   const modeFilterFn = useMemo(() => {
     if (mode === "st") {
-      return (s: Student) => s.SquadType === "Main";
+      return (s: MasterStudent) => s.squad_type === "Main";
     } else if (mode === "sp") {
-      return (s: Student) => s.SquadType === "Support";
+      return (s: MasterStudent) => s.squad_type === "Support";
     } else {
-      return (_: Student) => true;
+      return (_: MasterStudent) => true;
     }
   }, [mode]);
 
   const filterFn = useMemo(() => {
     if (schoolCategory === "Misc") {
-      return (s: Student) =>
-        !(MAIN_SCHOOLS as readonly string[]).includes(s.School);
+      return (s: MasterStudent) =>
+        !(MAIN_SCHOOLS as readonly string[]).includes(s.school);
     } else {
-      return (s: Student) => schoolCategory === s.School;
+      return (s: MasterStudent) => schoolCategory === s.school;
     }
   }, [schoolCategory]);
 
@@ -87,12 +87,7 @@ export default function StudentList({ mode, onSelect }: StudentListProps) {
         {students
           .filter(modeFilterFn)
           .filter(filterFn)
-          .map((student) => {
-            const id = student.Id;
-            const name = student.Name;
-
-            new S({ id }).attackPower();
-
+          .map(({ id, name }) => {
             return (
               <Button
                 key={id}

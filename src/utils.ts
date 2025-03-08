@@ -1,6 +1,10 @@
 export const COMP_KEYS = ["st1", "st2", "st3", "st4", "sp1", "sp2"] as const;
 export type CompKey = (typeof COMP_KEYS)[number];
 
+export function range(n: 1): [0];
+export function range(n: 2): [0, 1];
+export function range(n: 3): [0, 1, 2];
+export function range(n: number): number[];
 export function range(n: number): number[] {
   return [...Array(n).keys()];
 }

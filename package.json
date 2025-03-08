@@ -11,7 +11,8 @@
     "pages:build": "npx @cloudflare/next-on-pages",
     "preview": "npm run pages:build && wrangler pages dev",
     "deploy": "npm run pages:build && wrangler pages deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
+    "build:basim": "wasm-pack build rust/basim"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
@@ -20,12 +21,13 @@
     "@mui/icons-material": "^6.4.1",
     "@mui/material": "^6.4.1",
     "@mui/material-nextjs": "^6.3.1",
+    "basim": "0.0.1",
     "immer": "^10.1.1",
     "jotai": "^2.12.1",
     "jotai-immer": "^0.4.1",
     "jotai-optics": "^0.4.0",
     "nanoid": "^5.1.0",
-    "next": "^15.1.4",
+    "next": "15.2.0",
     "optics-ts": "^2.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -45,8 +47,9 @@
     "jsdom": "^26.0.0",
     "typescript": "^5",
     "vercel": "^41.1.4",
+    "vite-plugin-wasm": "^3.4.1",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.0.6",
+    "vitest": "^3.0.7",
     "wrangler": "^3.109.2"
   }
 }

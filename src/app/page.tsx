@@ -1,13 +1,13 @@
-"use client";
+import BasimProvider from "@/components/BasimProvider";
 import CompEditor from "@/components/CompEditor";
-import TimelineEditor from "@/components/TimelineEditor";
 
 export default function Home() {
   return (
     <div>
       <main>
-        <CompEditor />
-        <TimelineEditor />
+        <BasimProvider>
+          <CompEditor />
+        </BasimProvider>
       </main>
     </div>
   );

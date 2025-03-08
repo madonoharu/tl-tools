@@ -5,7 +5,9 @@
     "tier": 1,
     "icon": "equipment_icon_hat_tier1",
     "name": "無地のキャップ",
-    "stats": [{ "type": "AttackPower_Coefficient", "min": 500, "max": 800 }]
+    "stats": [
+      { "stat_type": "AttackPower_Coefficient", "min": 500, "max": 800 }
+    ]
   },
   {
     "id": 1001,
@@ -13,7 +15,9 @@
     "tier": 2,
     "icon": "equipment_icon_hat_tier2",
     "name": "ニット帽",
-    "stats": [{ "type": "AttackPower_Coefficient", "min": 1000, "max": 1300 }]
+    "stats": [
+      { "stat_type": "AttackPower_Coefficient", "min": 1000, "max": 1300 }
+    ]
   },
   {
     "id": 1002,
@@ -21,7 +25,9 @@
     "tier": 3,
     "icon": "equipment_icon_hat_tier3",
     "name": "ビッグブラザーの中折れ帽",
-    "stats": [{ "type": "AttackPower_Coefficient", "min": 1500, "max": 1800 }]
+    "stats": [
+      { "stat_type": "AttackPower_Coefficient", "min": 1500, "max": 1800 }
+    ]
   },
   {
     "id": 1003,
@@ -30,8 +36,8 @@
     "icon": "equipment_icon_hat_tier4",
     "name": "リボン付きベレー帽",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 2000, "max": 2500 },
-      { "type": "CriticalDamageRate_Base", "min": 400, "max": 800 }
+      { "stat_type": "AttackPower_Coefficient", "min": 2000, "max": 2500 },
+      { "stat_type": "CriticalDamageRate_Base", "min": 400, "max": 800 }
     ]
   },
   {
@@ -41,8 +47,8 @@
     "icon": "equipment_icon_hat_tier5",
     "name": "防弾ヘルメット",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 2700, "max": 3000 },
-      { "type": "CriticalDamageRate_Base", "min": 900, "max": 1200 }
+      { "stat_type": "AttackPower_Coefficient", "min": 2700, "max": 3000 },
+      { "stat_type": "CriticalDamageRate_Base", "min": 900, "max": 1200 }
     ]
   },
   {
@@ -52,8 +58,8 @@
     "icon": "equipment_icon_hat_tier6",
     "name": "フリルのミニハット",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 3100, "max": 3500 },
-      { "type": "CriticalDamageRate_Base", "min": 1250, "max": 1600 }
+      { "stat_type": "AttackPower_Coefficient", "min": 3100, "max": 3500 },
+      { "stat_type": "CriticalDamageRate_Base", "min": 1250, "max": 1600 }
     ]
   },
   {
@@ -63,8 +69,8 @@
     "icon": "equipment_icon_hat_tier7",
     "name": "バケットハット",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 3600, "max": 4000 },
-      { "type": "CriticalDamageRate_Base", "min": 1600, "max": 1800 }
+      { "stat_type": "AttackPower_Coefficient", "min": 3600, "max": 4000 },
+      { "stat_type": "CriticalDamageRate_Base", "min": 1600, "max": 1800 }
     ]
   },
   {
@@ -74,8 +80,8 @@
     "icon": "equipment_icon_hat_tier8",
     "name": "リーフリボン付き中折れ帽",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 4100, "max": 4500 },
-      { "type": "CriticalDamageRate_Base", "min": 1800, "max": 2000 }
+      { "stat_type": "AttackPower_Coefficient", "min": 4100, "max": 4500 },
+      { "stat_type": "CriticalDamageRate_Base", "min": 1800, "max": 2000 }
     ]
   },
   {
@@ -85,8 +91,8 @@
     "icon": "equipment_icon_hat_tier9",
     "name": "セーラーハット",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 4600, "max": 4800 },
-      { "type": "CriticalDamageRate_Base", "min": 2000, "max": 2000 }
+      { "stat_type": "AttackPower_Coefficient", "min": 4600, "max": 4800 },
+      { "stat_type": "CriticalDamageRate_Base", "min": 2000, "max": 2000 }
     ]
   },
   {
@@ -96,8 +102,8 @@
     "icon": "equipment_icon_hat_tier10",
     "name": "ゲーミングヘルメット",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 4900, "max": 5000 },
-      { "type": "CriticalDamageRate_Base", "min": 2000, "max": 2000 }
+      { "stat_type": "AttackPower_Coefficient", "min": 4900, "max": 5000 },
+      { "stat_type": "CriticalDamageRate_Base", "min": 2000, "max": 2000 }
     ]
   },
   {
@@ -106,7 +112,9 @@
     "tier": 1,
     "icon": "equipment_icon_gloves_tier1",
     "name": "スポーツグローブ",
-    "stats": [{ "type": "AttackPower_Coefficient", "min": 400, "max": 640 }]
+    "stats": [
+      { "stat_type": "AttackPower_Coefficient", "min": 400, "max": 640 }
+    ]
   },
   {
     "id": 2001,
@@ -114,7 +122,9 @@
     "tier": 2,
     "icon": "equipment_icon_gloves_tier2",
     "name": "ニットのミトン",
-    "stats": [{ "type": "AttackPower_Coefficient", "min": 800, "max": 1040 }]
+    "stats": [
+      { "stat_type": "AttackPower_Coefficient", "min": 800, "max": 1040 }
+    ]
   },
   {
     "id": 2002,
@@ -122,7 +132,9 @@
     "tier": 3,
     "icon": "equipment_icon_gloves_tier3",
     "name": "ペロロの鍋掴み",
-    "stats": [{ "type": "AttackPower_Coefficient", "min": 1200, "max": 1440 }]
+    "stats": [
+      { "stat_type": "AttackPower_Coefficient", "min": 1200, "max": 1440 }
+    ]
   },
   {
     "id": 2003,
@@ -131,8 +143,8 @@
     "icon": "equipment_icon_gloves_tier4",
     "name": "レザーグローブ",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 1600, "max": 2000 },
-      { "type": "CriticalPoint_Base", "min": 40, "max": 70 }
+      { "stat_type": "AttackPower_Coefficient", "min": 1600, "max": 2000 },
+      { "stat_type": "CriticalPoint_Base", "min": 40, "max": 70 }
     ]
   },
   {
@@ -142,8 +154,8 @@
     "icon": "equipment_icon_gloves_tier5",
     "name": "タクティカルグローブ",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 2150, "max": 2500 },
-      { "type": "CriticalPoint_Base", "min": 80, "max": 200 }
+      { "stat_type": "AttackPower_Coefficient", "min": 2150, "max": 2500 },
+      { "stat_type": "CriticalPoint_Base", "min": 80, "max": 200 }
     ]
   },
   {
@@ -153,9 +165,9 @@
     "icon": "equipment_icon_gloves_tier6",
     "name": "レースのグローブ",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 2600, "max": 3000 },
-      { "type": "CriticalPoint_Base", "min": 210, "max": 300 },
-      { "type": "AccuracyPoint_Base", "min": 10, "max": 30 }
+      { "stat_type": "AttackPower_Coefficient", "min": 2600, "max": 3000 },
+      { "stat_type": "CriticalPoint_Base", "min": 210, "max": 300 },
+      { "stat_type": "AccuracyPoint_Base", "min": 10, "max": 30 }
     ]
   },
   {
@@ -165,9 +177,9 @@
     "icon": "equipment_icon_gloves_tier7",
     "name": "アームカバー",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 3100, "max": 3500 },
-      { "type": "CriticalPoint_Base", "min": 300, "max": 350 },
-      { "type": "AccuracyPoint_Base", "min": 50, "max": 200 }
+      { "stat_type": "AttackPower_Coefficient", "min": 3100, "max": 3500 },
+      { "stat_type": "CriticalPoint_Base", "min": 300, "max": 350 },
+      { "stat_type": "AccuracyPoint_Base", "min": 50, "max": 200 }
     ]
   },
   {
@@ -177,9 +189,9 @@
     "icon": "equipment_icon_gloves_tier8",
     "name": "パールヤーングローブ",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 3600, "max": 4000 },
-      { "type": "CriticalPoint_Base", "min": 350, "max": 370 },
-      { "type": "AccuracyPoint_Base", "min": 200, "max": 220 }
+      { "stat_type": "AttackPower_Coefficient", "min": 3600, "max": 4000 },
+      { "stat_type": "CriticalPoint_Base", "min": 350, "max": 370 },
+      { "stat_type": "AccuracyPoint_Base", "min": 200, "max": 220 }
     ]
   },
   {
@@ -189,9 +201,9 @@
     "icon": "equipment_icon_gloves_tier9",
     "name": "セーリンググローブ",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 4100, "max": 4600 },
-      { "type": "CriticalPoint_Base", "min": 370, "max": 450 },
-      { "type": "AccuracyPoint_Base", "min": 220, "max": 220 }
+      { "stat_type": "AttackPower_Coefficient", "min": 4100, "max": 4600 },
+      { "stat_type": "CriticalPoint_Base", "min": 370, "max": 450 },
+      { "stat_type": "AccuracyPoint_Base", "min": 220, "max": 220 }
     ]
   },
   {
@@ -201,9 +213,9 @@
     "icon": "equipment_icon_gloves_tier10",
     "name": "スーパーグローブ",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 4700, "max": 5000 },
-      { "type": "CriticalPoint_Base", "min": 450, "max": 500 },
-      { "type": "AccuracyPoint_Base", "min": 220, "max": 220 }
+      { "stat_type": "AttackPower_Coefficient", "min": 4700, "max": 5000 },
+      { "stat_type": "CriticalPoint_Base", "min": 450, "max": 500 },
+      { "stat_type": "AccuracyPoint_Base", "min": 220, "max": 220 }
     ]
   },
   {
@@ -212,7 +224,9 @@
     "tier": 1,
     "icon": "equipment_icon_shoes_tier1",
     "name": "ピンクスニーカー",
-    "stats": [{ "type": "AttackPower_Coefficient", "min": 250, "max": 400 }]
+    "stats": [
+      { "stat_type": "AttackPower_Coefficient", "min": 250, "max": 400 }
+    ]
   },
   {
     "id": 3001,
@@ -220,7 +234,9 @@
     "tier": 2,
     "icon": "equipment_icon_shoes_tier2",
     "name": "ムートンブーツ",
-    "stats": [{ "type": "AttackPower_Coefficient", "min": 500, "max": 650 }]
+    "stats": [
+      { "stat_type": "AttackPower_Coefficient", "min": 500, "max": 650 }
+    ]
   },
   {
     "id": 3002,
@@ -228,7 +244,9 @@
     "tier": 3,
     "icon": "equipment_icon_shoes_tier3",
     "name": "ピンキーパカのスリッパ",
-    "stats": [{ "type": "AttackPower_Coefficient", "min": 750, "max": 900 }]
+    "stats": [
+      { "stat_type": "AttackPower_Coefficient", "min": 750, "max": 900 }
+    ]
   },
   {
     "id": 3003,
@@ -237,8 +255,8 @@
     "icon": "equipment_icon_shoes_tier4",
     "name": "アンティークなエナメルローファー",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 1000, "max": 1250 },
-      { "type": "MaxHP_Coefficient", "min": 300, "max": 600 }
+      { "stat_type": "AttackPower_Coefficient", "min": 1000, "max": 1250 },
+      { "stat_type": "MaxHP_Coefficient", "min": 300, "max": 600 }
     ]
   },
   {
@@ -248,8 +266,8 @@
     "icon": "equipment_icon_shoes_tier5",
     "name": "戦闘用ブーツ",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 1500, "max": 2000 },
-      { "type": "MaxHP_Coefficient", "min": 650, "max": 900 }
+      { "stat_type": "AttackPower_Coefficient", "min": 1500, "max": 2000 },
+      { "stat_type": "MaxHP_Coefficient", "min": 650, "max": 900 }
     ]
   },
   {
@@ -259,8 +277,8 @@
     "icon": "equipment_icon_shoes_tier6",
     "name": "ヒールパンプス",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 2100, "max": 2500 },
-      { "type": "MaxHP_Coefficient", "min": 950, "max": 1200 }
+      { "stat_type": "AttackPower_Coefficient", "min": 2100, "max": 2500 },
+      { "stat_type": "MaxHP_Coefficient", "min": 950, "max": 1200 }
     ]
   },
   {
@@ -270,8 +288,8 @@
     "icon": "equipment_icon_shoes_tier7",
     "name": "カジュアルスニーカー",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 2600, "max": 3000 },
-      { "type": "MaxHP_Coefficient", "min": 1200, "max": 1350 }
+      { "stat_type": "AttackPower_Coefficient", "min": 2600, "max": 3000 },
+      { "stat_type": "MaxHP_Coefficient", "min": 1200, "max": 1350 }
     ]
   },
   {
@@ -281,8 +299,8 @@
     "icon": "equipment_icon_shoes_tier8",
     "name": "防水登山ブーツ",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 3100, "max": 3500 },
-      { "type": "MaxHP_Coefficient", "min": 1350, "max": 1500 }
+      { "stat_type": "AttackPower_Coefficient", "min": 3100, "max": 3500 },
+      { "stat_type": "MaxHP_Coefficient", "min": 1350, "max": 1500 }
     ]
   },
   {
@@ -292,8 +310,8 @@
     "icon": "equipment_icon_shoes_tier9",
     "name": "アクアサンダル",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 3600, "max": 4200 },
-      { "type": "MaxHP_Coefficient", "min": 1500, "max": 1750 }
+      { "stat_type": "AttackPower_Coefficient", "min": 3600, "max": 4200 },
+      { "stat_type": "MaxHP_Coefficient", "min": 1500, "max": 1750 }
     ]
   },
   {
@@ -303,8 +321,8 @@
     "icon": "equipment_icon_shoes_tier10",
     "name": "ゲーミングスリッパ",
     "stats": [
-      { "type": "AttackPower_Coefficient", "min": 4300, "max": 4600 },
-      { "type": "MaxHP_Coefficient", "min": 1750, "max": 2000 }
+      { "stat_type": "AttackPower_Coefficient", "min": 4300, "max": 4600 },
+      { "stat_type": "MaxHP_Coefficient", "min": 1750, "max": 2000 }
     ]
   },
   {
@@ -313,7 +331,7 @@
     "tier": 1,
     "icon": "equipment_icon_bag_tier1",
     "name": "防水スポーツバッグ",
-    "stats": [{ "type": "MaxHP_Base", "min": 375, "max": 600 }]
+    "stats": [{ "stat_type": "MaxHP_Base", "min": 375, "max": 600 }]
   },
   {
     "id": 4001,
@@ -321,7 +339,7 @@
     "tier": 2,
     "icon": "equipment_icon_bag_tier2",
     "name": "寒冷地用バッグ",
-    "stats": [{ "type": "MaxHP_Base", "min": 750, "max": 975 }]
+    "stats": [{ "stat_type": "MaxHP_Base", "min": 750, "max": 975 }]
   },
   {
     "id": 4002,
@@ -329,7 +347,7 @@
     "tier": 3,
     "icon": "equipment_icon_bag_tier3",
     "name": "ペロロのバッグ",
-    "stats": [{ "type": "MaxHP_Base", "min": 1125, "max": 1350 }]
+    "stats": [{ "stat_type": "MaxHP_Base", "min": 1125, "max": 1350 }]
   },
   {
     "id": 4003,
@@ -338,8 +356,8 @@
     "icon": "equipment_icon_bag_tier4",
     "name": "紺色のスクールバッグ",
     "stats": [
-      { "type": "MaxHP_Base", "min": 1500, "max": 1875 },
-      { "type": "DefensePower_Base", "min": 500, "max": 1000 }
+      { "stat_type": "MaxHP_Base", "min": 1500, "max": 1875 },
+      { "stat_type": "DefensePower_Base", "min": 500, "max": 1000 }
     ]
   },
   {
@@ -349,8 +367,8 @@
     "icon": "equipment_icon_bag_tier5",
     "name": "戦闘用ランドセル",
     "stats": [
-      { "type": "MaxHP_Base", "min": 2500, "max": 3500 },
-      { "type": "DefensePower_Base", "min": 1000, "max": 1100 }
+      { "stat_type": "MaxHP_Base", "min": 2500, "max": 3500 },
+      { "stat_type": "DefensePower_Base", "min": 1000, "max": 1100 }
     ]
   },
   {
@@ -360,8 +378,8 @@
     "icon": "equipment_icon_bag_tier6",
     "name": "デビルウイングのトートバッグ",
     "stats": [
-      { "type": "MaxHP_Base", "min": 3750, "max": 5500 },
-      { "type": "DefensePower_Base", "min": 1100, "max": 1200 }
+      { "stat_type": "MaxHP_Base", "min": 3750, "max": 5500 },
+      { "stat_type": "DefensePower_Base", "min": 1100, "max": 1200 }
     ]
   },
   {
@@ -371,8 +389,8 @@
     "icon": "equipment_icon_bag_tier7",
     "name": "ストリートバッグ",
     "stats": [
-      { "type": "MaxHP_Base", "min": 5700, "max": 7500 },
-      { "type": "DefensePower_Base", "min": 1200, "max": 1300 }
+      { "stat_type": "MaxHP_Base", "min": 5700, "max": 7500 },
+      { "stat_type": "DefensePower_Base", "min": 1200, "max": 1300 }
     ]
   },
   {
@@ -382,8 +400,8 @@
     "icon": "equipment_icon_bag_tier8",
     "name": "蝶柄のショルダーバッグ",
     "stats": [
-      { "type": "MaxHP_Base", "min": 7700, "max": 9500 },
-      { "type": "DefensePower_Base", "min": 1300, "max": 1400 }
+      { "stat_type": "MaxHP_Base", "min": 7700, "max": 9500 },
+      { "stat_type": "DefensePower_Base", "min": 1300, "max": 1400 }
     ]
   },
   {
@@ -393,9 +411,9 @@
     "icon": "equipment_icon_bag_tier9",
     "name": "スリングドライバック",
     "stats": [
-      { "type": "MaxHP_Base", "min": 10000, "max": 12000 },
-      { "type": "DefensePower_Base", "min": 1400, "max": 1600 },
-      { "type": "MaxHP_Coefficient", "min": 200, "max": 500 }
+      { "stat_type": "MaxHP_Base", "min": 10000, "max": 12000 },
+      { "stat_type": "DefensePower_Base", "min": 1400, "max": 1600 },
+      { "stat_type": "MaxHP_Coefficient", "min": 200, "max": 500 }
     ]
   },
   {
@@ -405,9 +423,9 @@
     "icon": "equipment_icon_bag_tier10",
     "name": "メタルケース",
     "stats": [
-      { "type": "MaxHP_Base", "min": 12500, "max": 14000 },
-      { "type": "DefensePower_Base", "min": 1600, "max": 1700 },
-      { "type": "MaxHP_Coefficient", "min": 500, "max": 500 }
+      { "stat_type": "MaxHP_Base", "min": 12500, "max": 14000 },
+      { "stat_type": "DefensePower_Base", "min": 1600, "max": 1700 },
+      { "stat_type": "MaxHP_Coefficient", "min": 500, "max": 500 }
     ]
   },
   {
@@ -416,7 +434,7 @@
     "tier": 1,
     "icon": "equipment_icon_badge_tier1",
     "name": "サーバルのメタルバッジ",
-    "stats": [{ "type": "MaxHP_Base", "min": 500, "max": 800 }]
+    "stats": [{ "stat_type": "MaxHP_Base", "min": 500, "max": 800 }]
   },
   {
     "id": 5001,
@@ -424,7 +442,7 @@
     "tier": 2,
     "icon": "equipment_icon_badge_tier2",
     "name": "マナスルのフェルトバッジ",
-    "stats": [{ "type": "MaxHP_Base", "min": 1000, "max": 1300 }]
+    "stats": [{ "stat_type": "MaxHP_Base", "min": 1000, "max": 1300 }]
   },
   {
     "id": 5002,
@@ -432,7 +450,7 @@
     "tier": 3,
     "icon": "equipment_icon_badge_tier3",
     "name": "アングリーアデリーのバッジ",
-    "stats": [{ "type": "MaxHP_Base", "min": 1500, "max": 1800 }]
+    "stats": [{ "stat_type": "MaxHP_Base", "min": 1500, "max": 1800 }]
   },
   {
     "id": 5003,
@@ -441,8 +459,8 @@
     "icon": "equipment_icon_badge_tier4",
     "name": "ベロニカの刺繍バッジ",
     "stats": [
-      { "type": "MaxHP_Base", "min": 2000, "max": 2500 },
-      { "type": "HealEffectivenessRate_Base", "min": 500, "max": 1000 }
+      { "stat_type": "MaxHP_Base", "min": 2000, "max": 2500 },
+      { "stat_type": "HealEffectivenessRate_Base", "min": 500, "max": 1000 }
     ]
   },
   {
@@ -452,9 +470,9 @@
     "icon": "equipment_icon_badge_tier5",
     "name": "カゼヤマのワッペン",
     "stats": [
-      { "type": "MaxHP_Base", "min": 3500, "max": 4500 },
-      { "type": "HealEffectivenessRate_Base", "min": 1200, "max": 2000 },
-      { "type": "MaxHP_Coefficient", "min": 500, "max": 1000 }
+      { "stat_type": "MaxHP_Base", "min": 3500, "max": 4500 },
+      { "stat_type": "HealEffectivenessRate_Base", "min": 1200, "max": 2000 },
+      { "stat_type": "MaxHP_Coefficient", "min": 500, "max": 1000 }
     ]
   },
   {
@@ -464,9 +482,9 @@
     "icon": "equipment_icon_badge_tier6",
     "name": "ココデビルのバッジ",
     "stats": [
-      { "type": "MaxHP_Base", "min": 4750, "max": 6500 },
-      { "type": "HealEffectivenessRate_Base", "min": 2200, "max": 3000 },
-      { "type": "MaxHP_Coefficient", "min": 1100, "max": 1800 }
+      { "stat_type": "MaxHP_Base", "min": 4750, "max": 6500 },
+      { "stat_type": "HealEffectivenessRate_Base", "min": 2200, "max": 3000 },
+      { "stat_type": "MaxHP_Coefficient", "min": 1100, "max": 1800 }
     ]
   },
   {
@@ -476,10 +494,10 @@
     "icon": "equipment_icon_badge_tier7",
     "name": "ストリートバッジ",
     "stats": [
-      { "type": "MaxHP_Base", "min": 6800, "max": 9500 },
-      { "type": "HealEffectivenessRate_Base", "min": 3000, "max": 3200 },
-      { "type": "MaxHP_Coefficient", "min": 1900, "max": 2200 },
-      { "type": "DodgePoint_Base", "min": 50, "max": 400 }
+      { "stat_type": "MaxHP_Base", "min": 6800, "max": 9500 },
+      { "stat_type": "HealEffectivenessRate_Base", "min": 3000, "max": 3200 },
+      { "stat_type": "MaxHP_Coefficient", "min": 1900, "max": 2200 },
+      { "stat_type": "DodgePoint_Base", "min": 50, "max": 400 }
     ]
   },
   {
@@ -489,10 +507,10 @@
     "icon": "equipment_icon_badge_tier8",
     "name": "ローレライバッジ",
     "stats": [
-      { "type": "MaxHP_Base", "min": 9700, "max": 12000 },
-      { "type": "HealEffectivenessRate_Base", "min": 3200, "max": 3400 },
-      { "type": "MaxHP_Coefficient", "min": 2250, "max": 2400 },
-      { "type": "DodgePoint_Base", "min": 410, "max": 450 }
+      { "stat_type": "MaxHP_Base", "min": 9700, "max": 12000 },
+      { "stat_type": "HealEffectivenessRate_Base", "min": 3200, "max": 3400 },
+      { "stat_type": "MaxHP_Coefficient", "min": 2250, "max": 2400 },
+      { "stat_type": "DodgePoint_Base", "min": 410, "max": 450 }
     ]
   },
   {
@@ -502,10 +520,10 @@
     "icon": "equipment_icon_badge_tier9",
     "name": "ハルピュイア・フレキシブルバッジ",
     "stats": [
-      { "type": "MaxHP_Base", "min": 12500, "max": 14000 },
-      { "type": "HealEffectivenessRate_Base", "min": 3400, "max": 3500 },
-      { "type": "MaxHP_Coefficient", "min": 2400, "max": 2500 },
-      { "type": "DodgePoint_Base", "min": 450, "max": 450 }
+      { "stat_type": "MaxHP_Base", "min": 12500, "max": 14000 },
+      { "stat_type": "HealEffectivenessRate_Base", "min": 3400, "max": 3500 },
+      { "stat_type": "MaxHP_Coefficient", "min": 2400, "max": 2500 },
+      { "stat_type": "DodgePoint_Base", "min": 450, "max": 450 }
     ]
   },
   {
@@ -515,10 +533,10 @@
     "icon": "equipment_icon_badge_tier10",
     "name": "コインバッジ",
     "stats": [
-      { "type": "MaxHP_Base", "min": 14500, "max": 16000 },
-      { "type": "HealEffectivenessRate_Base", "min": 3500, "max": 3500 },
-      { "type": "MaxHP_Coefficient", "min": 2500, "max": 2500 },
-      { "type": "DodgePoint_Base", "min": 450, "max": 450 }
+      { "stat_type": "MaxHP_Base", "min": 14500, "max": 16000 },
+      { "stat_type": "HealEffectivenessRate_Base", "min": 3500, "max": 3500 },
+      { "stat_type": "MaxHP_Coefficient", "min": 2500, "max": 2500 },
+      { "stat_type": "DodgePoint_Base", "min": 450, "max": 450 }
     ]
   },
   {
@@ -527,7 +545,7 @@
     "tier": 1,
     "icon": "equipment_icon_hairpin_tier1",
     "name": "テニス用ヘアバンド",
-    "stats": [{ "type": "MaxHP_Base", "min": 250, "max": 400 }]
+    "stats": [{ "stat_type": "MaxHP_Base", "min": 250, "max": 400 }]
   },
   {
     "id": 6001,
@@ -535,7 +553,7 @@
     "tier": 2,
     "icon": "equipment_icon_hairpin_tier2",
     "name": "シュシュ",
-    "stats": [{ "type": "MaxHP_Base", "min": 500, "max": 650 }]
+    "stats": [{ "stat_type": "MaxHP_Base", "min": 500, "max": 650 }]
   },
   {
     "id": 6002,
@@ -543,7 +561,7 @@
     "tier": 3,
     "icon": "equipment_icon_hairpin_tier3",
     "name": "モモのヘアピン",
-    "stats": [{ "type": "MaxHP_Base", "min": 750, "max": 900 }]
+    "stats": [{ "stat_type": "MaxHP_Base", "min": 750, "max": 900 }]
   },
   {
     "id": 6003,
@@ -552,8 +570,8 @@
     "icon": "equipment_icon_hairpin_tier4",
     "name": "翼のヘアピン",
     "stats": [
-      { "type": "MaxHP_Base", "min": 1000, "max": 1250 },
-      { "type": "OppressionResist_Coefficient", "min": 500, "max": 1000 }
+      { "stat_type": "MaxHP_Base", "min": 1000, "max": 1250 },
+      { "stat_type": "OppressionResist_Coefficient", "min": 500, "max": 1000 }
     ]
   },
   {
@@ -563,8 +581,8 @@
     "icon": "equipment_icon_hairpin_tier5",
     "name": "多目的ヘアピン",
     "stats": [
-      { "type": "MaxHP_Base", "min": 2000, "max": 3000 },
-      { "type": "OppressionResist_Coefficient", "min": 1200, "max": 2000 }
+      { "stat_type": "MaxHP_Base", "min": 2000, "max": 3000 },
+      { "stat_type": "OppressionResist_Coefficient", "min": 1200, "max": 2000 }
     ]
   },
   {
@@ -574,8 +592,8 @@
     "icon": "equipment_icon_hairpin_tier6",
     "name": "コウモリのヘアピン",
     "stats": [
-      { "type": "MaxHP_Base", "min": 3250, "max": 4500 },
-      { "type": "OppressionResist_Coefficient", "min": 2200, "max": 2400 }
+      { "stat_type": "MaxHP_Base", "min": 3250, "max": 4500 },
+      { "stat_type": "OppressionResist_Coefficient", "min": 2200, "max": 2400 }
     ]
   },
   {
@@ -585,8 +603,8 @@
     "icon": "equipment_icon_hairpin_tier7",
     "name": "カリグラフィーヘアピン",
     "stats": [
-      { "type": "MaxHP_Base", "min": 4700, "max": 6500 },
-      { "type": "OppressionResist_Coefficient", "min": 2500, "max": 2800 }
+      { "stat_type": "MaxHP_Base", "min": 4700, "max": 6500 },
+      { "stat_type": "OppressionResist_Coefficient", "min": 2500, "max": 2800 }
     ]
   },
   {
@@ -596,8 +614,8 @@
     "icon": "equipment_icon_hairpin_tier8",
     "name": "リーフヘアピン",
     "stats": [
-      { "type": "MaxHP_Base", "min": 6700, "max": 8500 },
-      { "type": "OppressionResist_Coefficient", "min": 2900, "max": 3200 }
+      { "stat_type": "MaxHP_Base", "min": 6700, "max": 8500 },
+      { "stat_type": "OppressionResist_Coefficient", "min": 2900, "max": 3200 }
     ]
   },
   {
@@ -607,9 +625,9 @@
     "icon": "equipment_icon_hairpin_tier9",
     "name": "アンカーヘアピン",
     "stats": [
-      { "type": "MaxHP_Base", "min": 9000, "max": 11000 },
-      { "type": "OppressionResist_Coefficient", "min": 3200, "max": 3400 },
-      { "type": "CriticalPoint_Base", "min": 50, "max": 150 }
+      { "stat_type": "MaxHP_Base", "min": 9000, "max": 11000 },
+      { "stat_type": "OppressionResist_Coefficient", "min": 3200, "max": 3400 },
+      { "stat_type": "CriticalPoint_Base", "min": 50, "max": 150 }
     ]
   },
   {
@@ -619,9 +637,9 @@
     "icon": "equipment_icon_hairpin_tier10",
     "name": "電磁波カットヘアピン",
     "stats": [
-      { "type": "MaxHP_Base", "min": 11500, "max": 13000 },
-      { "type": "OppressionResist_Coefficient", "min": 3500, "max": 3600 },
-      { "type": "CriticalPoint_Base", "min": 150, "max": 150 }
+      { "stat_type": "MaxHP_Base", "min": 11500, "max": 13000 },
+      { "stat_type": "OppressionResist_Coefficient", "min": 3500, "max": 3600 },
+      { "stat_type": "CriticalPoint_Base", "min": 150, "max": 150 }
     ]
   },
   {
@@ -631,7 +649,7 @@
     "icon": "equipment_icon_charm_tier1",
     "name": "交通安全のお守り",
     "stats": [
-      { "type": "CriticalChanceResistPoint_Base", "min": 50, "max": 80 }
+      { "stat_type": "CriticalChanceResistPoint_Base", "min": 50, "max": 80 }
     ]
   },
   {
@@ -641,7 +659,7 @@
     "icon": "equipment_icon_charm_tier2",
     "name": "発熱カイロ",
     "stats": [
-      { "type": "CriticalChanceResistPoint_Base", "min": 100, "max": 130 }
+      { "stat_type": "CriticalChanceResistPoint_Base", "min": 100, "max": 130 }
     ]
   },
   {
@@ -651,7 +669,7 @@
     "icon": "equipment_icon_charm_tier3",
     "name": "ペロロのお守り",
     "stats": [
-      { "type": "CriticalChanceResistPoint_Base", "min": 150, "max": 180 }
+      { "stat_type": "CriticalChanceResistPoint_Base", "min": 150, "max": 180 }
     ]
   },
   {
@@ -661,8 +679,8 @@
     "icon": "equipment_icon_charm_tier4",
     "name": "クルス",
     "stats": [
-      { "type": "CriticalChanceResistPoint_Base", "min": 200, "max": 250 },
-      { "type": "CriticalDamageResistRate_Base", "min": 500, "max": 1000 }
+      { "stat_type": "CriticalChanceResistPoint_Base", "min": 200, "max": 250 },
+      { "stat_type": "CriticalDamageResistRate_Base", "min": 500, "max": 1000 }
     ]
   },
   {
@@ -672,9 +690,13 @@
     "icon": "equipment_icon_charm_tier5",
     "name": "カモフラダルマ",
     "stats": [
-      { "type": "CriticalChanceResistPoint_Base", "min": 260, "max": 280 },
-      { "type": "CriticalDamageResistRate_Base", "min": 1100, "max": 1500 },
-      { "type": "CriticalPoint_Base", "min": 60, "max": 120 }
+      { "stat_type": "CriticalChanceResistPoint_Base", "min": 260, "max": 280 },
+      {
+        "stat_type": "CriticalDamageResistRate_Base",
+        "min": 1100,
+        "max": 1500
+      },
+      { "stat_type": "CriticalPoint_Base", "min": 60, "max": 120 }
     ]
   },
   {
@@ -684,9 +706,13 @@
     "icon": "equipment_icon_charm_tier6",
     "name": "呪いの人形",
     "stats": [
-      { "type": "CriticalChanceResistPoint_Base", "min": 290, "max": 320 },
-      { "type": "CriticalDamageResistRate_Base", "min": 1600, "max": 1800 },
-      { "type": "CriticalPoint_Base", "min": 125, "max": 150 }
+      { "stat_type": "CriticalChanceResistPoint_Base", "min": 290, "max": 320 },
+      {
+        "stat_type": "CriticalDamageResistRate_Base",
+        "min": 1600,
+        "max": 1800
+      },
+      { "stat_type": "CriticalPoint_Base", "min": 125, "max": 150 }
     ]
   },
   {
@@ -696,9 +722,13 @@
     "icon": "equipment_icon_charm_tier7",
     "name": "ポケット消臭剤",
     "stats": [
-      { "type": "CriticalChanceResistPoint_Base", "min": 330, "max": 360 },
-      { "type": "CriticalDamageResistRate_Base", "min": 1900, "max": 2100 },
-      { "type": "CriticalPoint_Base", "min": 155, "max": 180 }
+      { "stat_type": "CriticalChanceResistPoint_Base", "min": 330, "max": 360 },
+      {
+        "stat_type": "CriticalDamageResistRate_Base",
+        "min": 1900,
+        "max": 2100
+      },
+      { "stat_type": "CriticalPoint_Base", "min": 155, "max": 180 }
     ]
   },
   {
@@ -708,9 +738,13 @@
     "icon": "equipment_icon_charm_tier8",
     "name": "ドリームキャッチャー",
     "stats": [
-      { "type": "CriticalChanceResistPoint_Base", "min": 365, "max": 380 },
-      { "type": "CriticalDamageResistRate_Base", "min": 2200, "max": 2400 },
-      { "type": "CriticalPoint_Base", "min": 185, "max": 200 }
+      { "stat_type": "CriticalChanceResistPoint_Base", "min": 365, "max": 380 },
+      {
+        "stat_type": "CriticalDamageResistRate_Base",
+        "min": 2200,
+        "max": 2400
+      },
+      { "stat_type": "CriticalPoint_Base", "min": 185, "max": 200 }
     ]
   },
   {
@@ -720,9 +754,13 @@
     "icon": "equipment_icon_charm_tier9",
     "name": "サメの歯のお守り",
     "stats": [
-      { "type": "CriticalChanceResistPoint_Base", "min": 385, "max": 400 },
-      { "type": "CriticalDamageResistRate_Base", "min": 2500, "max": 2700 },
-      { "type": "CriticalPoint_Base", "min": 210, "max": 250 }
+      { "stat_type": "CriticalChanceResistPoint_Base", "min": 385, "max": 400 },
+      {
+        "stat_type": "CriticalDamageResistRate_Base",
+        "min": 2500,
+        "max": 2700
+      },
+      { "stat_type": "CriticalPoint_Base", "min": 210, "max": 250 }
     ]
   },
   {
@@ -731,7 +769,7 @@
     "tier": 1,
     "icon": "equipment_icon_watch_tier1",
     "name": "デジタルウォッチ",
-    "stats": [{ "type": "CriticalPoint_Base", "min": 50, "max": 80 }]
+    "stats": [{ "stat_type": "CriticalPoint_Base", "min": 50, "max": 80 }]
   },
   {
     "id": 8001,
@@ -739,7 +777,7 @@
     "tier": 2,
     "icon": "equipment_icon_watch_tier2",
     "name": "レザーの腕時計",
-    "stats": [{ "type": "CriticalPoint_Base", "min": 100, "max": 130 }]
+    "stats": [{ "stat_type": "CriticalPoint_Base", "min": 100, "max": 130 }]
   },
   {
     "id": 8002,
@@ -747,7 +785,7 @@
     "tier": 3,
     "icon": "equipment_icon_watch_tier3",
     "name": "ウェーブキャットの時計",
-    "stats": [{ "type": "CriticalPoint_Base", "min": 150, "max": 180 }]
+    "stats": [{ "stat_type": "CriticalPoint_Base", "min": 150, "max": 180 }]
   },
   {
     "id": 8003,
@@ -756,8 +794,8 @@
     "icon": "equipment_icon_watch_tier4",
     "name": "アンティークな懐中時計",
     "stats": [
-      { "type": "CriticalPoint_Base", "min": 200, "max": 250 },
-      { "type": "CriticalDamageRate_Base", "min": 500, "max": 1000 }
+      { "stat_type": "CriticalPoint_Base", "min": 200, "max": 250 },
+      { "stat_type": "CriticalDamageRate_Base", "min": 500, "max": 1000 }
     ]
   },
   {
@@ -767,9 +805,9 @@
     "icon": "equipment_icon_watch_tier5",
     "name": "防塵型の腕時計",
     "stats": [
-      { "type": "CriticalPoint_Base", "min": 260, "max": 280 },
-      { "type": "CriticalDamageRate_Base", "min": 1100, "max": 1500 },
-      { "type": "MaxHP_Coefficient", "min": 250, "max": 500 }
+      { "stat_type": "CriticalPoint_Base", "min": 260, "max": 280 },
+      { "stat_type": "CriticalDamageRate_Base", "min": 1100, "max": 1500 },
+      { "stat_type": "MaxHP_Coefficient", "min": 250, "max": 500 }
     ]
   },
   {
@@ -779,9 +817,9 @@
     "icon": "equipment_icon_watch_tier6",
     "name": "ゴシック風の腕時計",
     "stats": [
-      { "type": "CriticalPoint_Base", "min": 290, "max": 320 },
-      { "type": "CriticalDamageRate_Base", "min": 1600, "max": 1800 },
-      { "type": "MaxHP_Coefficient", "min": 550, "max": 700 }
+      { "stat_type": "CriticalPoint_Base", "min": 290, "max": 320 },
+      { "stat_type": "CriticalDamageRate_Base", "min": 1600, "max": 1800 },
+      { "stat_type": "MaxHP_Coefficient", "min": 550, "max": 700 }
     ]
   },
   {
@@ -791,9 +829,9 @@
     "icon": "equipment_icon_watch_tier7",
     "name": "ストリートファッションウォッチ",
     "stats": [
-      { "type": "CriticalPoint_Base", "min": 330, "max": 360 },
-      { "type": "CriticalDamageRate_Base", "min": 1900, "max": 2100 },
-      { "type": "MaxHP_Coefficient", "min": 750, "max": 900 }
+      { "stat_type": "CriticalPoint_Base", "min": 330, "max": 360 },
+      { "stat_type": "CriticalDamageRate_Base", "min": 1900, "max": 2100 },
+      { "stat_type": "MaxHP_Coefficient", "min": 750, "max": 900 }
     ]
   },
   {
@@ -803,9 +841,9 @@
     "icon": "equipment_icon_watch_tier8",
     "name": "ローレライの腕時計",
     "stats": [
-      { "type": "CriticalPoint_Base", "min": 370, "max": 400 },
-      { "type": "CriticalDamageRate_Base", "min": 2200, "max": 2400 },
-      { "type": "MaxHP_Coefficient", "min": 950, "max": 1100 }
+      { "stat_type": "CriticalPoint_Base", "min": 370, "max": 400 },
+      { "stat_type": "CriticalDamageRate_Base", "min": 2200, "max": 2400 },
+      { "stat_type": "MaxHP_Coefficient", "min": 950, "max": 1100 }
     ]
   },
   {
@@ -815,9 +853,9 @@
     "icon": "equipment_icon_watch_tier9",
     "name": "ダイバーウォッチ",
     "stats": [
-      { "type": "CriticalPoint_Base", "min": 410, "max": 440 },
-      { "type": "CriticalDamageRate_Base", "min": 2450, "max": 2500 },
-      { "type": "MaxHP_Coefficient", "min": 1150, "max": 1300 }
+      { "stat_type": "CriticalPoint_Base", "min": 410, "max": 440 },
+      { "stat_type": "CriticalDamageRate_Base", "min": 2450, "max": 2500 },
+      { "stat_type": "MaxHP_Coefficient", "min": 1150, "max": 1300 }
     ]
   },
   {
@@ -827,8 +865,8 @@
     "icon": "equipment_icon_necklace_tier1",
     "name": "ブルートゥースのネックレス",
     "stats": [
-      { "type": "HealPower_Coefficient", "min": 500, "max": 800 },
-      { "type": "OppressionPower_Coefficient", "min": 500, "max": 800 }
+      { "stat_type": "HealPower_Coefficient", "min": 500, "max": 800 },
+      { "stat_type": "OppressionPower_Coefficient", "min": 500, "max": 800 }
     ]
   },
   {
@@ -838,8 +876,8 @@
     "icon": "equipment_icon_necklace_tier2",
     "name": "雪花のペンダント",
     "stats": [
-      { "type": "HealPower_Coefficient", "min": 1000, "max": 1300 },
-      { "type": "OppressionPower_Coefficient", "min": 1000, "max": 1300 }
+      { "stat_type": "HealPower_Coefficient", "min": 1000, "max": 1300 },
+      { "stat_type": "OppressionPower_Coefficient", "min": 1000, "max": 1300 }
     ]
   },
   {
@@ -849,8 +887,8 @@
     "icon": "equipment_icon_necklace_tier3",
     "name": "ニコライのロケットペンダント",
     "stats": [
-      { "type": "HealPower_Coefficient", "min": 1500, "max": 1800 },
-      { "type": "OppressionPower_Coefficient", "min": 1500, "max": 1800 }
+      { "stat_type": "HealPower_Coefficient", "min": 1500, "max": 1800 },
+      { "stat_type": "OppressionPower_Coefficient", "min": 1500, "max": 1800 }
     ]
   },
   {
@@ -860,8 +898,8 @@
     "icon": "equipment_icon_necklace_tier4",
     "name": "十字架のチョーカー",
     "stats": [
-      { "type": "HealPower_Coefficient", "min": 2000, "max": 2500 },
-      { "type": "OppressionPower_Coefficient", "min": 2000, "max": 2500 }
+      { "stat_type": "HealPower_Coefficient", "min": 2000, "max": 2500 },
+      { "stat_type": "OppressionPower_Coefficient", "min": 2000, "max": 2500 }
     ]
   },
   {
@@ -871,9 +909,9 @@
     "icon": "equipment_icon_necklace_tier5",
     "name": "ドッグタグ",
     "stats": [
-      { "type": "HealPower_Coefficient", "min": 2600, "max": 2800 },
-      { "type": "OppressionPower_Coefficient", "min": 2600, "max": 2800 },
-      { "type": "AttackPower_Coefficient", "min": 250, "max": 400 }
+      { "stat_type": "HealPower_Coefficient", "min": 2600, "max": 2800 },
+      { "stat_type": "OppressionPower_Coefficient", "min": 2600, "max": 2800 },
+      { "stat_type": "AttackPower_Coefficient", "min": 250, "max": 400 }
     ]
   },
   {
@@ -883,9 +921,9 @@
     "icon": "equipment_icon_necklace_tier6",
     "name": "パンクチョーカー",
     "stats": [
-      { "type": "HealPower_Coefficient", "min": 2900, "max": 3200 },
-      { "type": "OppressionPower_Coefficient", "min": 2900, "max": 3200 },
-      { "type": "AttackPower_Coefficient", "min": 450, "max": 600 }
+      { "stat_type": "HealPower_Coefficient", "min": 2900, "max": 3200 },
+      { "stat_type": "OppressionPower_Coefficient", "min": 2900, "max": 3200 },
+      { "stat_type": "AttackPower_Coefficient", "min": 450, "max": 600 }
     ]
   },
   {
@@ -895,9 +933,9 @@
     "icon": "equipment_icon_necklace_tier7",
     "name": "チェーンネックレス",
     "stats": [
-      { "type": "HealPower_Coefficient", "min": 3300, "max": 3500 },
-      { "type": "OppressionPower_Coefficient", "min": 3300, "max": 3500 },
-      { "type": "AttackPower_Coefficient", "min": 650, "max": 800 }
+      { "stat_type": "HealPower_Coefficient", "min": 3300, "max": 3500 },
+      { "stat_type": "OppressionPower_Coefficient", "min": 3300, "max": 3500 },
+      { "stat_type": "AttackPower_Coefficient", "min": 650, "max": 800 }
     ]
   },
   {
@@ -907,9 +945,9 @@
     "icon": "equipment_icon_necklace_tier8",
     "name": "グリーンリーフネックレス",
     "stats": [
-      { "type": "HealPower_Coefficient", "min": 3600, "max": 3800 },
-      { "type": "OppressionPower_Coefficient", "min": 3600, "max": 3800 },
-      { "type": "AttackPower_Coefficient", "min": 850, "max": 1000 }
+      { "stat_type": "HealPower_Coefficient", "min": 3600, "max": 3800 },
+      { "stat_type": "OppressionPower_Coefficient", "min": 3600, "max": 3800 },
+      { "stat_type": "AttackPower_Coefficient", "min": 850, "max": 1000 }
     ]
   },
   {
@@ -919,9 +957,9 @@
     "icon": "equipment_icon_necklace_tier9",
     "name": "オクトパスホルダー",
     "stats": [
-      { "type": "HealPower_Coefficient", "min": 3900, "max": 4000 },
-      { "type": "OppressionPower_Coefficient", "min": 3800, "max": 3800 },
-      { "type": "AttackPower_Coefficient", "min": 1100, "max": 1400 }
+      { "stat_type": "HealPower_Coefficient", "min": 3900, "max": 4000 },
+      { "stat_type": "OppressionPower_Coefficient", "min": 3800, "max": 3800 },
+      { "stat_type": "AttackPower_Coefficient", "min": 1100, "max": 1400 }
     ]
   }
 ]

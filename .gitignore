@@ -43,3 +43,11 @@ next-env.d.ts
 # wrangler files
 .wrangler
 .dev.vars
+
+# rust
+/target
+**/*.rs.bk
+Cargo.lock
+bin/
+pkg/
+wasm-pack.log

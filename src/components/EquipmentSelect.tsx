@@ -1,10 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Image from "next/image";
+import { EquipmentCategory } from "basim";
 
-import equipmentJson, {
-  Equipment,
-  EquipmentCategory,
-} from "@/data/equipment.json";
+import equipmentJson, { Equipment } from "@/data/equipments.json";
 
 import Select from "./Select";
 import { useMemo } from "react";
